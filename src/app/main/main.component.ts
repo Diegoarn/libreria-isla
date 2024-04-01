@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Books} from '../modelos.model'
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css'],
+  styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  books = [
+  books: Books[] = [
     {
       title: 'El Gran Gatsby',
       author: 'F. Scott Fitzgerald',
